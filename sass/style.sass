@@ -1,0 +1,337 @@
+* 
+    box-sizing: border-box
+
+.header
+    padding-bottom: 23px
+    background-image: url(../img/bg.png)
+    background-size: cover
+    background-position: center center
+    position: relative
+    .first-screen__top-line
+        display: flex
+        justify-content: space-around
+        align-items: center
+        padding: 33px 0px
+        border-bottom: 1px solid #ffffff
+        .logo
+        .menu
+            nav
+                display: flex
+                li
+                    list-style: none
+                    margin-right: 47px
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 16px
+                    line-height: 135%
+                    color: #FFFFFF
+            .burger
+                display: none
+        .search
+            display: flex
+            .button-search
+                margin-right: 35px
+                border: none
+                background: none
+            .language
+                color: white
+    .first-screen__main
+        margin-top: 184px
+        .first-screen-title
+            margin-bottom: 50px
+            &__h1
+                font-style: normal
+                font-weight: bold
+                font-size: 64px
+                line-height: 160%
+                text-transform: uppercase
+                color: #FFFFFF
+                margin-bottom: 35px
+            &__p
+                font-style: normal
+                font-weight: normal
+                font-size: 24px
+                line-height: 140%
+                color: #FFFFFF
+                margin-bottom: 25px
+            &__more
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 135%
+                color: #FFFFFF
+        .container
+            .block
+                background: #2378FC
+                padding: 30px 0px 30px 40px
+                margin-bottom: 30px
+                &__h1 
+                    font-weight: 500
+                    font-size: 21px
+                    line-height: 130%
+                    letter-spacing: -0.01em
+                    color: #FFFFFF
+                    margin-bottom: 15px
+                &__more
+                    font-weight: normal
+                    font-size: 14px
+                    line-height: 135%
+                    color: #FFFFFF
+    .modals
+        position: absolute
+        top: 0
+        left: 0
+        background: red
+        height: 100vh 
+        z-index: 1
+        width: 300px
+        background: rgba(0,0 ,0 ,0.7 )
+        padding: 38px 38px 140px
+        .modal__close
+            border: none
+            background: none
+            float: right
+            color: white
+        nav 
+            padding-top: 76px
+            li
+                list-style: none
+                text-transform: uppercase
+                font-weight: bold
+                font-size: 18px
+                line-height: 33px
+                letter-spacing: 0.05em
+                padding-bottom: 30px
+                a
+                    color: white
+        a
+            i   
+                font-size: 28px
+                padding-right: 27px               
+.side-menu
+    background: #2378FC
+    padding: 75px 0px
+    &__block
+        text-align: center
+        &__h1
+            font-weight: 500
+            font-size: 30px
+            line-height: 130%
+            letter-spacing: -0.01em
+            color: #FFFFFF
+            margin-bottom: 30px
+        &__list
+            padding-bottom: 20px
+            nav
+                li
+                    list-style: none
+                    font-weight: normal
+                    font-size: 16px
+                    line-height: 135%
+                    color: #FFFFFF
+                    margin-bottom: 15px
+                    cursor: pointer
+                    &:hover
+                        color: #FFC41E
+                        text-decoration-line: underline
+.events
+    background: #FFC41E
+    padding: 75px 0px 79px 0px
+    &__title
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 55px
+        &__h1
+            font-weight: 500
+            font-size: 30px
+            line-height: 130%
+            letter-spacing: -0.01em
+            color: #2E373B
+        &__more
+            font-weight: 500
+            font-size: 21px
+            line-height: 130%
+            text-align: right
+            letter-spacing: -0.01em
+            text-decoration-line: underline
+            color: #2E373B
+    &__block
+        display: flex
+        flex-direction: column
+        align-items: center
+        img
+            margin-bottom: 20px
+        &__date
+            margin-bottom: 10px
+            font-weight: normal
+            font-size: 14px
+            line-height: 135%
+            color: #2E373B
+        &__h1
+            margin-bottom: 10px
+            font-weight: 500
+            font-size: 21px
+            line-height: 130%
+            letter-spacing: -0.01em
+            color: #F6404F
+        &__h2
+            margin-bottom: 40px
+            font-weight: normal
+            font-size: 16px
+            line-height: 135%
+            color: #2E373B
+.news
+    background: #FAF3E3
+    padding: 75px 0px 85px 0px
+    &__title
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 36px
+        &__h1
+            font-weight: 500
+            font-size: 30px
+            line-height: 130%
+            letter-spacing: -0.01em
+            color: #2E373B
+        &__more
+            cursor: pointer
+            font-weight: 500
+            font-size: 21px
+            line-height: 130%
+            letter-spacing: -0.01em
+            text-decoration-line: underline
+            color: #2E373B
+    &__block
+        display: flex
+        margin-bottom: 30px
+        &__img 
+            margin-right: 30px
+        &__text
+            &__date
+                padding-top: 10px
+                font-weight: normal
+                font-size: 16px
+                line-height: 135%
+                color: #F6404F
+                margin-bottom: 14px
+            &__h1
+                font-weight: 500
+                font-size: 21px
+                line-height: 130%
+                letter-spacing: -0.01em
+                color: #2E373B
+.footer
+    padding: 60px 0px 70px 0px
+    background: #30BCC9
+    form
+        width: 100%
+        display: flex
+        height: 40px
+        input
+            width: 75%
+            padding-left: 20px
+        button
+            width: 25%
+            border: none
+            background: #F6404F
+
+
+.no-center
+    text-align: left
+.hide 
+    display: none !important
+
+@media screen and ( max-width: 1200px )
+    .events
+        .events__block
+            img 
+                width: 300px
+@media screen and ( max-width: 992px  )
+    .header
+        .first-screen__top-line
+            .logo
+                img
+                    width: 130px
+            .menu 
+                nav
+                    li
+                        font-size: 13px
+                        margin-right: 15px
+            .search
+                .button-search 
+                    margin-right: 15px
+                    img
+                        width: 15px
+                .language
+                    img
+                        width: 15px
+    .events
+        .events__title
+            &__h1
+                font-size: 16px
+            &__more
+                font-size: 10px
+@media screen and ( max-width: 768px  )
+    .header
+        .first-screen__top-line
+            justify-content: space-between
+            margin: 0px 30px
+            .logo
+                display: none
+            .menu
+                nav
+                    display: none
+                .burger
+                    display: block
+            .search 
+                .button-search
+                    img
+                        width: 20px
+                .language
+                    img
+                        width: 20px
+    .events
+        .events__block
+            img 
+                width: 250px
+            &__date
+                font-size: 12px
+            &__h1
+                font-size: 19px
+            &__h2
+                font-size: 13px
+@media screen and ( max-width: 576px )
+    .header
+        .first-screen__main
+            .first-screen-title
+                &__h1
+                    font-size: 32px
+                &__p
+                    font-size: 20px
+    .news
+        background: #FAF3E3
+        padding: 75px 0px 85px 0px
+        &__title
+            display: flex
+            justify-content: space-between
+            margin-bottom: 36px
+            &__h1
+                font-size: 24px
+            &__more
+                font-size: 17px
+        &__block
+            display: flex
+            margin-bottom: 30px
+            &__img 
+                margin-right: 30px
+                img
+                    width: 100px
+            &__text
+                &__date
+                    padding-top: 5px
+                    font-size: 10px
+                    margin-bottom: 7px
+                &__h1
+                    font-size: 13px

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/7aa58f9b29.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="first-screen__top-line">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <nav>
+                    <li>О комплексе</li>
+                    <li>О компании</li>
+                    <li>Новости</li>
+                    <li>Медиа-банк</li>
+                    <li>Контакты</li>
+                </nav>
+                <div class="burger" id="burger">
+                    <img src="./img/Vector.png" alt="">
+                </div>
+            </div>
+            <div class="search">
+                <button class="button-search"><img src="./img/Search.png" alt=""></button>
+                <div class="language">
+                    <img src="./img/Globe.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="first-screen__main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="first-screen-title">
+                            <div class="first-screen-title__h1">
+                                ЭКСПОФОРУМ
+                            </div>
+                            <div class="first-screen-title__p">
+                                конгрессно-выставочный центр 
+                                Санкт-Петербурга
+                            </div>
+                            <div class="first-screen-title__more">
+                                О комплексе
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="block">
+                                    <div class="block__h1">
+                                        Календарь 
+                                        мероприятий
+                                    </div>
+                                    <div class="block__more">
+                                        Подробнее
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="block" style="background: #30BCC9">
+                                    <div class="block__h1">
+                                        Как добраться
+                                        до Экспофорума
+                                    </div>
+                                    <div class="block__more">
+                                        Подробнее
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="block" style="background: #FFC41E">
+                                    <div class="block__h1">
+                                        Онлайн-заявка 
+                                        на организацию
+                                        мероприятия
+                                    </div>
+                                    <div class="block__more">
+                                        Подробнее
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6" >
+                                <div class="block" style="background: #F6404F">
+                                    <div class="block__h1">
+                                        План 
+                                        и инфраструктура 
+                                        комплекса
+                                    </div>
+                                    <div class="block__more">
+                                        Подробнее
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modals hide" id="modal">
+            <button class="modal__close" id="close">&#10008;</button>
+            <nav>
+                <li><a href="">Главная</a></li>
+                <li><a href="">О театре</a></li>
+                <li><a href="">Наши постановки</a></li>
+                <li><a href="">партнеры театра</a></li>
+                <li><a href="">контакты</a></li>
+            </nav>
+        </div>
+    </div>
+    <div class="side-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="side-menu__block">
+                        <div class="side-menu__block__h1">
+                            Организаторам
+                        </div>
+                        <div class="side-menu__block__list">
+                            <nav>
+                                <li>Документы организаторам</li>
+                                <li>Услуги организаторам</li>
+                                <li>Выставочные площади</li>
+                                <li>Рестораны и кафе</li>
+                                <li>Конгресс-центр</li>
+                                <li>Спорт-центр</li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="side-menu__block">
+                        <div class="side-menu__block__h1">
+                            Экспонентам 
+                        </div>
+                        <div class="side-menu__block__list">
+                            <nav>
+                                <li>Общие условия участия</li>
+                                <li>Услуги экспонентам</li>
+                                <li>Документы экспонентам</li>
+                                <li>Центр деловых контактов</li>
+                                <li>Забронировать гостиницу</li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="side-menu__block">
+                        <div class="side-menu__block__h1">
+                            Посетителям
+                        </div>
+                        <div class="side-menu__block__list">
+                            <nav>
+                                <li>Сервисы</li>
+                                <li>Онлайн-регистрация на мероприятие </li>
+                                <li>Забронировать гостиницу</li>
+                                <li>Центр деловых контактов</li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="side-menu__block">
+                        <div class="side-menu__block__h1">
+                            Прессе
+                        </div>
+                        <div class="side-menu__block__list">
+                            <nav>
+                                <li>Аккредитация</li>
+                                <li>Пресс-служба</li>
+                                <li>Правила аккредитации</li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="events">
+        <div class="container">
+            <div class="events__title">
+                <div class="events__title__h1">
+                    Текущие и будущие мероприятие
+                </div>
+                <div class="events__title__more">
+                    Все мероприятия
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="events__block">
+                        <img src="./img/events (2).png" alt="">
+                        <div class="events__block__date">
+                            2 января 2020 г. – 7 января 2020 г.
+                        </div>
+                        <div class="events__block__h1">
+                            ЭКСПО ЕЛКА
+                        </div>
+                        <div class="events__block__h2">
+                            Парк интерактивных развлечений
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="events__block">
+                        <img src="./img/events (3).png" alt="">
+                        <div class="events__block__date">
+                            5 февраля 2020 г. – 9 февраля 2020 г.
+                        </div>
+                        <div class="events__block__h1">
+                            Junwex Петербург
+                        </div>
+                        <div class="events__block__h2">
+                            Выставка ювелирных изделий
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="events__block">
+                        <img src="./img/events (4).png" alt="">
+                        <div class="events__block__date">
+                            7 февраля 2020 г. – 9 февраля 2020 г.
+                        </div>
+                        <div class="events__block__h1">
+                            Невский ларец
+                        </div>
+                        <div class="events__block__h2">
+                            Выставка-ярмарка народных художественных
+                            промыслов и ремесел
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="events__block">
+                        <img src="./img/events (5).png" alt="">
+                        <div class="events__block__date">
+                            14 февраля 2020 г. – 23 февраля 2020 г.
+                        </div>
+                        <div class="events__block__h1">
+                            ПОНАЕХАЛИ!
+                        </div>
+                        <div class="events__block__h2">
+                            Специализированная арт-ярмарка
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="events__block">
+                        <img src="./img/events (6).png" alt="">
+                        <div class="events__block__date">
+                            18 февраля 2020 г. – 21 февраля 2020 г.
+                        </div>
+                        <div class="events__block__h1">
+                            VET.CAMP
+                        </div>
+                        <div class="events__block__h2">
+                            Конференция для ветеринарных врачей
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="events__block">
+                        <img src="./img/events (1).png" alt="">
+                        <div class="events__block__date">
+                            26 февраля 2020 г. – 28 февраля 2020 г.
+                        </div>
+                        <div class="events__block__h1">
+                            ExpoHoReCa
+                        </div>
+                        <div class="events__block__h2">
+                            Специализированная выставка
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="news">
+        <div class="container">
+            <div class="news__title">
+                <div class="news__title__h1">
+                    Новости
+                </div>
+                <div class="news__title__more">
+                    Все новости
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="news__block">
+                        <div class="news__block__img">
+                            <img src="./img/news (1).jpg" alt="">
+                        </div>
+                        <div class="news__block__text">
+                            <div class="news__block__text__date">
+                                4 января 2020 г.
+                            </div>
+                            <div class="news__block__text__h1">
+                                Как объединилась реальность и виртуальность – LIKEE PARTY
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__block">
+                        <div class="news__block__img">
+                            <img src="./img/news (2).jpg" alt="">
+                        </div>
+                        <div class="news__block__text">
+                            <div class="news__block__text__date">
+                                2 января 2020 г.
+                            </div>
+                            <div class="news__block__text__h1">
+                                Как объединилась реальность и виртуальность – LIKEE PARTY
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__block">
+                        <div class="news__block__img">
+                            <img src="./img/news (3).jpg" alt="">
+                        </div>
+                        <div class="news__block__text">
+                            <div class="news__block__text__date">
+                                9 января 2020 г.
+                            </div>
+                            <div class="news__block__text__h1">
+                                Как объединилась реальность и виртуальность – LIKEE PARTY
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="side-menu__block no-center">
+                        <div class="side-menu__block__h1">
+                            О компании
+                        </div>
+                        <div class="side-menu__block__list">
+                            <nav>
+                                <li>О нашей компании</li>
+                                <li>Вакансии</li>
+                                <li>Партнеры</li>
+                                <li>Контакты</li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="side-menu__block no-center">
+                        <div class="side-menu__block__h1">
+                            Экспонентам
+                        </div>
+                        <div class="side-menu__block__list">
+                            <nav>
+                                <li>Общие условия участия</li>
+                                <li>Услуги экспонентам</li>
+                                <li>Документы экспонентам</li>
+                                <li>Забронировать гостиницу</li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="side-menu__block no-center">
+                        <div class="side-menu__block__h1">
+                            Прессе
+                        </div>
+                        <div class="side-menu__block__list">
+                            <nav>
+                                <li>Аккредитация</li>
+                                <li>Пресс-служба</li>
+                                <li>Правила аккредитации</li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="side-menu__block no-center">
+                        <div class="side-menu__block__h1">
+                            Мы в соц. сетях
+                        </div>
+                        <div class="side-menu__block__list">
+                            <nav style="display: flex;">
+                                <img src="./img/Vector (1).svg" alt="" height="25px" style="padding-right: 30px; ">
+                                <img src="./img/Vector (2).svg" alt="" height="25px" style="padding-right: 30px; ">
+                                <img src="./img/Group.svg" alt="" height="25px" style="padding-right: 30px; ">
+                                <img src="./img/Vector.svg" alt="" height="25px" >
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="side-menu__block no-center">
+                        <div class="side-menu__block__h1">
+                            Организаторам
+                        </div>
+                        <div class="side-menu__block__list">
+                            <nav>
+                                <li>Преимущества площадки</li>
+                                <li>Структура комплекса</li>
+                                <li>Онлайн-заявка на организацию</li>
+                                <li>Документы организаторам</li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="side-menu__block no-center">
+                        <div class="side-menu__block__h1">
+                            Посетителям
+                        </div>
+                        <div class="side-menu__block__list">
+                            <nav>
+                                <li>Сервисы</li>
+                                <li>Онлайн-регистрация</li>
+                                <li>Забронировать гостиницу</li>
+                                <li>Центр деловых контактов</li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="side-menu__block no-center">
+                        <div class="side-menu__block__h1">
+                            Приложение
+                        </div>
+                        <div class="side-menu__block__list">
+                            <nav>
+                                <img src="./img/Frame (1).svg" alt="" style="padding-bottom: 15px">
+                                <img src="./img/Frame.svg" alt="">
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="side-menu__block no-center">
+                        <div class="side-menu__block__h1">
+                            Подписка на новости
+                        </div>
+                        <div class="side-menu__block__list">
+                            <nav>
+                                <p style="color: white;">Получайте все самые последние новости о мероприятиях в Экспофоруме.</p>
+                                <form >
+                                    <input type="text" placeholder="Введите ваш e-mail">
+                                    <button><img src="./img/Vector (4).png" alt=""></button>
+                                </form>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/style.js"></script>
+</body>
+</html>
